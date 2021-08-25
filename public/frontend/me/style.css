@@ -1,0 +1,161 @@
+
+.aboutme-left{
+    background: #14414B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+.aboutme-left-content > div{
+    background: #076e88;
+    padding: 4rem 4rem 2.5rem 5rem;
+    text-align: center;
+    width: 46vh;
+    height: 60vh;
+}
+.aboutme-left-content ul{
+    background: rgb(66, 122, 136);
+    text-align: center;
+    width: 46vh;
+}
+
+
+
+.aboutme-left-content{
+    box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+    -webkit-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+}
+.aboutme-img img{
+    display: block;
+    width: 150px;
+}
+.aboutme-img{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+.shadow{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    cursor: pointer;
+}
+.shadow::after{
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+    height: 7px;
+    width: 50px;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+.shadow:hover .aboutme-img{
+    transform: translateY(-10px);
+}
+.shadow:hover::after{
+    opacity: 1;
+}
+.aboutme-left-content h2{
+    font-size: 2rem;
+    margin: 2.2rem 0 0.6rem 0;
+    line-height: 1.2;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #edffec;
+}
+.aboutme-left-content h3{
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-top: 1.2rem;
+}
+.aboutme-right{
+    background: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem;
+    text-align: center;
+}
+
+.aboutme-right h1{
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+.aboutme-right h1 span{
+    color: #dd2d4a;
+}
+.aboutme-right h2{
+    font-weight: 600;
+}
+.aboutme-btns{
+    display: flex;
+    margin: 2rem 0;
+}
+.btn{
+    border: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 0.55rem 0;
+    width: 130px;
+    font-weight: 600;
+    background: transparent;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+.btn.btn-pink{
+    background: #dd2d4a;
+    color: #fff;
+    border-color: #dd2d4a;
+    transition: all 0.5s ease-in-out;
+}
+.btn.btn-pink:hover{
+    background: transparent;
+    border-color: #dd2d4a;
+    color: #000;
+}
+.btn.btn-white{
+    transition: all 0.5s ease-in-out;
+}
+.btn.btn-white:hover{
+    background: #dd2d4a;
+    border-color: #dd2d4a;
+    color: #fff;
+}
+.aboutme-para p{
+    font-weight: 300;
+    padding: 0.5rem;
+    opacity: 0.8;
+    text-align: justify;
+}
+
+@media screen and (min-width: 768px){
+    .aboutme-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: -20px;
+    }
+    .aboutme-left{
+        position: relative;
+    }
+    .aboutme-left-content{
+        position: absolute;
+        right: -50px;
+    }
+   
+}
