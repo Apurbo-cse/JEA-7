@@ -10,6 +10,7 @@
                 </div>
             </form>
         </div>
+        
 
         <!--Adds Widget-->
         <div class="sidebar-widget sidebar-adds-widget">

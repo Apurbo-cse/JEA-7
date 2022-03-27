@@ -58,9 +58,7 @@
                         <div class="front"><i class="fa fa-phone" aria-hidden="true"></i></div>
                         <div class="back"><i class="fa fa-phone" aria-hidden="true"></i></div>
                     </a></li>
-
             </ul>
-
         </div>
 
         @endforeach

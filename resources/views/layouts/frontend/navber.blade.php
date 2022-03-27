@@ -36,8 +36,7 @@
             <div class="dropdown">
                 <a class="dropbtn"style="color:black;" >Info</a>
                 <div class="dropdown-content">
-                    <a href="#">President</a>
-                    <a href="#">Coneving Memeber</a>
+                    <a href="{{route('convening-member')}}">Convening Member</a>
                     <a href="{{route('developer')}}">Developer Info</a>
                 </div>
             </div>

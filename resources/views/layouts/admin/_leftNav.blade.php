@@ -6,7 +6,7 @@
         </div>
         <div class="user-info">
             <div class="dropdown">
-                <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">A</a>
+                <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">{{ Auth::guard('admin')->user()->name }}</a>
             </div>
 
             <p class="text-muted m-0"><i class="fa fa-dot-circle-o text-success"></i> Online</p>

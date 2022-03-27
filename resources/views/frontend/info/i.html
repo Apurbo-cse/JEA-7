@@ -1,0 +1,33 @@
+<div class="container">
+    <!---About Detailes--->
+    <div id="top">
+        <ul class="rslides" id="slider3">
+            @foreach($presidents as $president)
+            <li>
+                <div class="agile_ab_w3ls_info">
+                    <div class="col-md-6 ab_pic_w3ls">
+                        <img src="{{asset($president->image)}}" alt=" " class="img-responsive"
+                            style="width:300px;height:250px" />
+                    </div>
+                    
+                    <div class="col-md-6 ab_pic_w3ls_text_info">
+                        <h4><span style="color: red;">Vice-</span>President</h4>
+                        <br>
+                        <h6>
+                            Md. Sabab Zulfiker
+                        </h6>
+                        <br>
+                        <div>
+                            <p class="pro-type">ESc in EEE</p>
+                            <p class="pro-type">Email : sabab.cse@diu.edu.bd</p>
+                            <p class="pro-type">Daffodil International University</p>
+                        </div>
+                        <p style="text-align: justify;text-justify: inter-word;">{{$president->digination}}</p>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </li>
+            @endforeach
+        </ul>
+    </div>

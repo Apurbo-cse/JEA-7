@@ -130,6 +130,20 @@
                                 <div class="back"><i class="fa fa-linkedin" aria-hidden="true" style="color:black;"></i>
                                 </div>
                             </a></li>
+
+                            <li><a target="_blank" href="mailto:{{Auth::user()->email}}" class="email">
+                                <div class="front"><i class="fa fa-envelope-o" aria-hidden="true"
+                                        style="color:white;margin-top:5px;"></i></div>
+                                <div class="back"><i class="fa fa-envelope-o" aria-hidden="true" style="color:black;"></i>
+                                </div>
+                        </a></li>
+
+                        <li><a target="_blank" href="tel:+88{{Auth::user()->phone}}" class="phone">
+                                <div class="front"><i class="fa fa-phone" aria-hidden="true"
+                                        style="color:white;margin-top:5px;"></i></div>
+                                <div class="back"><i class="fa fa-phone" aria-hidden="true" style="color:black;"></i>
+                                </div>
+                        </a></li>
                     </ul>
                 </div>
             </div>

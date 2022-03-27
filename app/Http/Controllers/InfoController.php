@@ -7,16 +7,10 @@ use Illuminate\Support\Facades\DB;
 
 class InfoController extends Controller
 {
-    public function msc()
+    public function convening_member()
     {
         $data['contacts'] = DB::table('contacts')->limit(1)->get();
-        return view('frontend.info.president',$data);
-    }
-
-    public function bsc()
-    {
-        $data['contacts'] = DB::table('contacts')->limit(1)->get();
-        return view('frontend.info.convening_member',$data);
+        return view('frontend.info.convening-member',$data);
     }
 
     public function developer()

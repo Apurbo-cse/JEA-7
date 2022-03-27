@@ -84,7 +84,7 @@
 				</div>
 				<div class="clearfix"></div>
 
-				<p class="copy-right">&copy 2021 JEA. All rights reserved | Design by <a
+				<p class="copy-right">&copy 2021 JEA. All rights reserved | Design & Develope by <a
 						href="http://apurboroy.me/"><b style="color:orange;  " class="ml12">Apurbo Roy</b></a></p>
 			@endforeach
 			</div>

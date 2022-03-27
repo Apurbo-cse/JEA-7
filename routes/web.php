@@ -41,8 +41,7 @@ Route::group(['prefix'=>'public'], function (){
 
     Route::group(['prefix'=>'info'], function (){
     
-    Route::get('president','InfoController@president')->name('president');
-    Route::get('convening-member','InfoController@convening_member')->name('convening_member');
+    Route::get('convening-member','InfoController@convening_member')->name('convening-member');
     Route::get('developer','InfoController@developer')->name('developer');
     
     });
@@ -98,7 +97,7 @@ Route::get('dashboard', 'Admin\HomeController@index')->name('dashboard');
 
      Route::middleware('auth:admin')->group(function () {
        
-        Route::get('dashboard', 'HomeController@index')->name('admin.home');
+        Route::get('admin', 'HomeController@index')->name('admin.home');
         Route::post('logout', 'LoginController@logout')->name('admin.logout');
 
         Route::resource('about', 'AboutController');
